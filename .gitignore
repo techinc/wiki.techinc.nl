@@ -1,0 +1,6 @@
+/webroot/LocalSettings.php
+/webroot/cache/*
+!/webroot/cache/.htaccess
+/webroot/images/*
+!/webroot/images/.htaccess
+
