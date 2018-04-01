@@ -62,6 +62,7 @@ fcontext -a -t httpd_sys_rw_content_t '/var/www/webroot/cache(/.*)?'
 restorecon -Rv /var/www
 setsebool -P httpd_can_network_connect=1
 setsebool -P httpd_setrlimit=1
+setsebool -P httpd_can_sendmail=1 #if you want your Mediawiki instance to send mail
 ```
 
 ***TODO:***
@@ -75,6 +76,8 @@ This is still "Work in Progess"
 
 
 ## For development
+
+> Note: You will need to install composer on your development environment
 
 To start with a fresh installation, first switch to the development branch:
 ```bash
