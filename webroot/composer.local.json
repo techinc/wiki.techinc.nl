@@ -1,0 +1,9 @@
+{
+        "require": {
+                "mediawiki/semantic-media-wiki": "~2.5.6",
+                "mediawiki/semantic-result-formats": "~2.5.4",
+                "mediawiki/semantic-extra-special-properties": "~1.5",
+                "mediawiki/page-forms": "^4.3",
+                "mediawiki/validator": "2.2.*"
+        }
+}
