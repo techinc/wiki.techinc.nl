@@ -18,7 +18,7 @@ This repo uses **git flow**.  If you don't know how it works, you can look [here
 
 In order to run this setup, you need at least the following:
 - Centos 7, or Debian Stretch (virtual) machine
-- MariaDB 10.2 database server
+- MariaDB 10.3 database server
 - PHP 7.1 (production) or 7.2
 - A webserver (preferably Nginx)
 - Redis for backend caching
@@ -51,15 +51,15 @@ git submodule update --init --recursive
 
 ### SELinux
 
-To run Mediawiki in a RHEL / Centos environment with SELinux enforcing, you need to add the following rules (change `/var/www/webroot` to the location on your system):
+To run Mediawiki in a RHEL / Centos environment with SELinux enforcing, you need to add the following rules (change `/var/www/wiki.techinc.nl/webroot` to the location on your system):
 
 ```bash
-fcontext -a -t httpd_sys_content_t '/var/www/webroot(/.*)?'
-fcontext -a -t httpd_sys_script_exec_t '/var/www/webroot/.*\.php?'
-fcontext -a -t httpd_sys_script_exec_t '/var/www/webroot/includes/.*\.php?'
-fcontext -a -t httpd_sys_rw_content_t '/var/www/webroot/images(/.*)?'
-fcontext -a -t httpd_sys_rw_content_t '/var/www/webroot/cache(/.*)?'
-restorecon -Rv /var/www
+semanage fcontext -a -t httpd_sys_content_t '/var/www/wiki.techinc.nl/webroot(/.*)?'
+semanage fcontext -a -t httpd_sys_script_exec_t '/var/www/wiki.techinc.nl/webroot/.*\.php?'
+semanage fcontext -a -t httpd_sys_script_exec_t '/var/www/wiki.techinc.nl/webroot/includes/.*\.php?'
+semanage fcontext -a -t httpd_sys_rw_content_t '/var/www/wiki.techinc.nl/webroot/images(/.*)?'
+semanage fcontext -a -t httpd_sys_rw_content_t '/var/www/wiki.techinc.nl/webroot/cache(/.*)?'
+semanage restorecon -Rv /var/www
 setsebool -P httpd_can_network_connect=1
 setsebool -P httpd_setrlimit=1
 setsebool -P httpd_can_sendmail=1 #if you want your Mediawiki instance to send mail

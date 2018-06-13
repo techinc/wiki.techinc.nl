@@ -176,6 +176,17 @@ $wgCaptchaTriggers['addurl']        = false;
 $wgCaptchaTriggers['createaccount'] = true;
 $wgCaptchaTriggers['badlogin']      = true;
 
+#Disable for everyone.
+#$wgGroupPermissions['*']['edit']              = false;
+## Disable for users, too: by default 'user' is allowed to edit, even if '*' is not.
+#$wgGroupPermissions['user']['edit']           = false;
+## Make it so users with confirmed email addresses are in the group.
+#$wgAutopromote['emailconfirmed']              = APCOND_EMAILCONFIRMED;
+## Hide group from user list. 
+#$wgImplicitGroups[]                           = 'emailconfirmed';
+## Finally, set it to true for the desired group.
+#$wgGroupPermissions['emailconfirmed']['edit'] = true;
+#
 
 wfLoadExtension( 'MsUpload' );
 wfLoadExtension( 'Nuke' );

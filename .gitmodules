@@ -1,0 +1,50 @@
+[submodule "webroot/extensions/AdminLinks"]
+	path = webroot/extensions/AdminLinks
+	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/AdminLinks
+	branch = REL1_30
+[submodule "webroot/extensions/Arrays"]
+	path = webroot/extensions/Arrays
+	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/Arrays
+	branch = REL1_30
+[submodule "webroot/extensions/MsUpload"]
+	path = webroot/extensions/MsUpload
+	url = https://github.com/wikimedia/mediawiki-extensions-MsUpload
+	branch = REL1_30
+[submodule "webroot/extensions/MyVariables"]
+	path = webroot/extensions/MyVariables
+	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/MyVariables
+	branch = REL1_30
+[submodule "webroot/extensions/PageImages"]
+	path = webroot/extensions/PageImages
+	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/PageImages
+	branch = REL1_30
+[submodule "webroot/extensions/Popups"]
+	path = webroot/extensions/Popups
+	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/Popups
+	branch = REL1_30
+[submodule "webroot/extensions/SemanticDrilldown"]
+	path = webroot/extensions/SemanticDrilldown
+	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/SemanticDrilldown.git
+	branch = REL1_30
+[submodule "webroot/extensions/SemanticInternalObjects"]
+	path = webroot/extensions/SemanticInternalObjects
+	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/SemanticInternalObjects
+	branch = REL1_30
+[submodule "webroot/extensions/TextExtracts"]
+	path = webroot/extensions/TextExtracts
+	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/TextExtracts
+	branch = REL1_30
+[submodule "webroot/extensions/UserMerge"]
+	path = webroot/extensions/UserMerge
+	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/UserMerge
+	branch = REL1_30
+[submodule "webroot/extensions/Widgets"]
+	path = webroot/extensions/Widgets
+	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/Widgets
+	branch = REL1_30
+[submodule "webroot/extensions/RegexParserFunctions"]
+	path = webroot/extensions/RegexParserFunctions
+	url = https://github.com/mediawiki4intranet/RegexParserFunctions
+[submodule "webroot/extensions/SimpleSamlAuth"]
+	path = webroot/extensions/SimpleSamlAuth
+	url = https://github.com/jornane/mwSimpleSamlAuth.git
