@@ -1,7 +1,7 @@
 # ParamProcessor
 
 ParamProcessor is a parameter processing library that provides a way to
-decoratively define a set of parameters and how they should be processed.
+declaratively define a set of parameters and how they should be processed.
 It can take such declarations together with a list of raw parameters and
 provide the processed values. For example, if one defines a parameter to
 be an integer, in the range `[0, 100]`, then ParamProcessor will verify the
@@ -183,11 +183,6 @@ The requires fields currently are: name and message
 		<td></td>
 	</tr>
 	<tr>
-		<th>coordinate</th>
-		<td>DataValues\LatLongValue</td>
-		<td></td>
-	</tr>
-	<tr>
 		<th>dimension</th>
 		<td>string</td>
 		<td>Value for a width or height attribute in HTML</td>
@@ -199,6 +194,8 @@ The requires fields currently are: name and message
 * <code>string-parser</code> Name of a class that implements the `ValueParsers\ValueParser` interface
 * <code>validation-callback</code> Callback that gets the raw value as only parameter and returns a boolean
 * <code>validator</code> Name of a class that implements the `ValueValidators\ValueValidator` interface
+
+As an example, the Maps MediaWiki extension defines a `coordinate` parameter type that turns the input into a `DataValues\LatLongValue` value object.
 
 ## Examples
 
@@ -260,6 +257,10 @@ support the [Maps](https://github.com/JeroenDeDauw/Maps) and [Semantic MediaWiki
 (https://semantic-mediawiki.org/) projects.
 
 ## Release notes
+
+### 1.3.4 (2018-05-05)
+
+* Fixed deprecation notice occurring with PHP 7.2+
 
 ### 1.3.3 (2017-09-28)
 

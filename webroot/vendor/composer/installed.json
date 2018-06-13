@@ -637,21 +637,22 @@
             }
         ],
         "description": "Safe replacement to @ for suppressing warnings.",
-        "homepage": "https://www.mediawiki.org/wiki/at-ease"
+        "homepage": "https://www.mediawiki.org/wiki/at-ease",
+        "abandoned": "wikimedia/at-ease"
     },
     {
         "name": "mediawiki/page-forms",
-        "version": "4.3",
-        "version_normalized": "4.3.0.0",
+        "version": "4.3.1",
+        "version_normalized": "4.3.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/wikimedia/mediawiki-extensions-PageForms.git",
-            "reference": "c35e352737abebae08ba249e19640b25b350d145"
+            "reference": "a3c23fef0c5f97599d7710a32c5ec7ac24a0d42a"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-PageForms/zipball/c35e352737abebae08ba249e19640b25b350d145",
-            "reference": "c35e352737abebae08ba249e19640b25b350d145",
+            "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-PageForms/zipball/a3c23fef0c5f97599d7710a32c5ec7ac24a0d42a",
+            "reference": "a3c23fef0c5f97599d7710a32c5ec7ac24a0d42a",
             "shasum": ""
         },
         "require": {
@@ -667,7 +668,7 @@
         "suggest": {
             "mediawiki/open-layers": "Allow us to use ResourceLoader for OpenLayers."
         },
-        "time": "2018-03-14T17:50:30+00:00",
+        "time": "2018-04-24T15:46:12+00:00",
         "type": "mediawiki-extension",
         "extra": {
             "branch-alias": {
@@ -918,17 +919,17 @@
     },
     {
         "name": "mediawiki/semantic-result-formats",
-        "version": "2.5.4",
-        "version_normalized": "2.5.4.0",
+        "version": "2.5.5",
+        "version_normalized": "2.5.5.0",
         "source": {
             "type": "git",
             "url": "https://github.com/SemanticMediaWiki/SemanticResultFormats.git",
-            "reference": "4ad6f2d184c93a5ab5b8609a281f62ebde4a8fc7"
+            "reference": "b6ffe99e9d6bb5534d8771e03fee605ecc5eb707"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/SemanticMediaWiki/SemanticResultFormats/zipball/4ad6f2d184c93a5ab5b8609a281f62ebde4a8fc7",
-            "reference": "4ad6f2d184c93a5ab5b8609a281f62ebde4a8fc7",
+            "url": "https://api.github.com/repos/SemanticMediaWiki/SemanticResultFormats/zipball/b6ffe99e9d6bb5534d8771e03fee605ecc5eb707",
+            "reference": "b6ffe99e9d6bb5534d8771e03fee605ecc5eb707",
             "shasum": ""
         },
         "require": {
@@ -943,7 +944,7 @@
             "mediawiki/graph-viz": "Required for 'format=graph' and 'format=process'",
             "phpoffice/phpexcel": "Required for 'format=excel'"
         },
-        "time": "2017-11-13T14:15:53+00:00",
+        "time": "2018-04-04T19:12:45+00:00",
         "type": "mediawiki-extension",
         "extra": {
             "branch-alias": {
@@ -967,7 +968,7 @@
         },
         "notification-url": "https://packagist.org/downloads/",
         "license": [
-            "GPL-2.0+"
+            "GPL-2.0-or-later"
         ],
         "authors": [
             {
@@ -1635,17 +1636,17 @@
     },
     {
         "name": "param-processor/param-processor",
-        "version": "1.3.3",
-        "version_normalized": "1.3.3.0",
+        "version": "1.3.4",
+        "version_normalized": "1.3.4.0",
         "source": {
             "type": "git",
             "url": "https://github.com/JeroenDeDauw/ParamProcessor.git",
-            "reference": "22204d843604862bab2da071815d57f33b487deb"
+            "reference": "f35b06f3bebf899cf640f15362e08768ac112202"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/JeroenDeDauw/ParamProcessor/zipball/22204d843604862bab2da071815d57f33b487deb",
-            "reference": "22204d843604862bab2da071815d57f33b487deb",
+            "url": "https://api.github.com/repos/JeroenDeDauw/ParamProcessor/zipball/f35b06f3bebf899cf640f15362e08768ac112202",
+            "reference": "f35b06f3bebf899cf640f15362e08768ac112202",
             "shasum": ""
         },
         "require": {
@@ -1661,7 +1662,7 @@
             "phpunit/phpunit": "~5.4|~4.8",
             "squizlabs/php_codesniffer": "~2.1"
         },
-        "time": "2017-09-28T06:17:38+00:00",
+        "time": "2018-05-05T18:38:56+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1683,13 +1684,13 @@
         },
         "notification-url": "https://packagist.org/downloads/",
         "license": [
-            "GPL-2.0+"
+            "GPL-2.0-or-later"
         ],
         "authors": [
             {
                 "name": "Jeroen De Dauw",
                 "email": "jeroendedauw@gmail.com",
-                "homepage": "http://jeroendedauw.com",
+                "homepage": "https://www.entropywins.wtf",
                 "role": "Developer"
             }
         ],
@@ -1812,23 +1813,23 @@
     },
     {
         "name": "symfony/css-selector",
-        "version": "v3.4.6",
-        "version_normalized": "3.4.6.0",
+        "version": "v3.4.11",
+        "version_normalized": "3.4.11.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/css-selector.git",
-            "reference": "544655f1fc078a9cd839fdda2b7b1e64627c826a"
+            "reference": "d2ce52290b648ae33b5301d09bc14ee378612914"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/css-selector/zipball/544655f1fc078a9cd839fdda2b7b1e64627c826a",
-            "reference": "544655f1fc078a9cd839fdda2b7b1e64627c826a",
+            "url": "https://api.github.com/repos/symfony/css-selector/zipball/d2ce52290b648ae33b5301d09bc14ee378612914",
+            "reference": "d2ce52290b648ae33b5301d09bc14ee378612914",
             "shasum": ""
         },
         "require": {
             "php": "^5.5.9|>=7.0.8"
         },
-        "time": "2018-02-03T14:55:07+00:00",
+        "time": "2018-05-16T12:49:49+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {

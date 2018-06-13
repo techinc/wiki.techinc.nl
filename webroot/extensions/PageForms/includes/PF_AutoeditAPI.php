@@ -320,6 +320,7 @@ class PFAutoeditAPI extends ApiBase {
 		$data = array_merge(
 				array(
 					'wpTextbox1' => $targetContent,
+					'wpUnicodeCheck' => 'ℳ𝒲♥𝓊𝓃𝒾𝒸ℴ𝒹ℯ',
 					'wpSummary' => '',
 					'wpStarttime' => wfTimestampNow(),
 					'wpEdittime' => '',
@@ -846,6 +847,8 @@ class PFAutoeditAPI extends ApiBase {
 		// pages.
 		if ( !$pageExists ) {
 			Hooks::run( 'PageForms::EditFormPreloadText', array( &$preloadContent, $targetTitle, $formTitle ) );
+		} else {
+			Hooks::run( 'PageForms::EditFormInitialText', array( &$preloadContent, $targetTitle, $formTitle ) );
 		}
 
 		// Flag to keep track of formHTML() runs.

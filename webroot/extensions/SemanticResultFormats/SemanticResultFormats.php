@@ -51,7 +51,7 @@ class SemanticResultFormats {
 	 */
 	public static function initExtension() {
 
-		define( 'SRF_VERSION', '2.5.4' );
+		define( 'SRF_VERSION', '2.5.5' );
 
 		// Register the extension
 		$GLOBALS['wgExtensionCredits']['semantic'][] = [
@@ -71,7 +71,7 @@ class SemanticResultFormats {
 			],
 			'url' => 'https://www.semantic-mediawiki.org/wiki/Extension:Semantic_Result_Formats',
 			'descriptionmsg' => 'srf-desc',
-			'license-name'   => 'GPL-2.0+'
+			'license-name'   => 'GPL-2.0-or-later'
 		];
 
 		// Register message files
